@@ -5,13 +5,7 @@ import matplotlib.pyplot as plt
 # Judul aplikasi
 st.title("Dashboard Penyewaan Sepeda")
 
-# Data penyewaan sepeda di hari kerja berdasarkan jam
-data = {
-    'Jam': [i for i in range(24)],
-    'Penyewaan 2011': [100 + i * 5 for i in range(24)],  # contoh data 2011
-    'Penyewaan 2012': [150 + i * 7 for i in range(24)]   # contoh data 2012
-}
-df = pd.DataFrame(data)
+
 
 
 # 1. Visualisasi penyewaan sepeda di hari kerja berdasarkan jam
