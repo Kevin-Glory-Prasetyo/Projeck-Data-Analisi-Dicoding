@@ -17,7 +17,7 @@ working_day_data = hour_df[hour_df['workingday'] == 1]
 rental_by_hour_2011 = working_day_data[working_day_data['yr'] == 0].groupby('hr')['cnt'].sum()
 rental_by_hour_2012 = working_day_data[working_day_data['yr'] == 1].groupby('hr')['cnt'].sum()
 
-# Combine into a DataFrame
+# Kombinasikan beberapa  variabel tempat menampung data yang sudah difilter ke dalam Dataframe
 df = pd.DataFrame({
     'Jam': rental_by_hour_2011.index,
     'Penyewaan 2011': rental_by_hour_2011.values,
